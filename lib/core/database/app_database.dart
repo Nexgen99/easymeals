@@ -1,6 +1,8 @@
 import 'package:path/path.dart' as path;
 import 'package:sqflite/sqflite.dart';
 
+import '../../features/meals/data/repositories/meal_repository.dart';
+
 /// Point d'accès unique à la base de données SQLite d'Easy Meals.
 class AppDatabase {
   AppDatabase._();
@@ -27,6 +29,7 @@ class AppDatabase {
         await database.execute('PRAGMA foreign_keys = ON');
       },
       onCreate: _createSchema,
+      onOpen: _seedDefaultMeals,
     );
   }
 
@@ -56,6 +59,10 @@ class AppDatabase {
       'CREATE INDEX index_weekly_meals_week_start '
       'ON weekly_meals(week_start)',
     );
+  }
+
+  Future<void> _seedDefaultMeals(Database database) async {
+    await MealRepository(database).seedDefaultsIfEmpty();
   }
 
   /// Ferme la base, principalement pour les tests et le développement.
