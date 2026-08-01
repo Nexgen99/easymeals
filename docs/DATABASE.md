@@ -14,6 +14,8 @@ Cette table contient les idées de repas fournies par l’utilisateur.
 | `category` | TEXT | Catégorie du repas |
 | `ingredients` | TEXT | Liste JSON des ingrédients |
 
+Le `MealRepository` regroupe les opérations d’ajout, de lecture, de modification et de suppression. À l’ouverture de la base, 14 repas par défaut sont insérés uniquement si la table est vide. Les données créées ou modifiées par l’utilisateur ne sont donc jamais remplacées par cette initialisation.
+
 ## Table `weekly_meals`
 
 Cette table associe un repas à chacun des sept jours d’une semaine.
