@@ -24,3 +24,6 @@ Le format s’inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/
 - Création du schéma SQLite initial pour les repas et les menus hebdomadaires.
 - Ajout des contraintes garantissant un seul repas par jour.
 - Documentation et tests unitaires du modèle et de la base de données.
+- Création du dépôt SQLite pour ajouter, lire, modifier et supprimer les repas.
+- Ajout de 14 repas par défaut avec leurs ingrédients.
+- Initialisation automatique des repas par défaut lorsque la base est vide.
