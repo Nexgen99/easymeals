@@ -19,3 +19,8 @@ Le format s’inspire de [Keep a Changelog](https://keepachangelog.com/fr/1.1.0/
 - Configuration du système officiel de traduction de Flutter.
 - Création des premières traductions françaises et anglaises.
 - Documentation des dépendances principales.
+- Création du modèle métier `Meal`, incluant les ingrédients.
+- Conversion des repas vers et depuis les données SQLite.
+- Création du schéma SQLite initial pour les repas et les menus hebdomadaires.
+- Ajout des contraintes garantissant un seul repas par jour.
+- Documentation et tests unitaires du modèle et de la base de données.
