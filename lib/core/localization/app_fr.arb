@@ -1,0 +1,7 @@
+{
+  "@@locale": "fr",
+  "appTitle": "Repas faciles",
+  "weeklyMealsTitle": "Vos repas de la semaine",
+  "generateWeeklyMeals": "Générer les repas de la semaine",
+  "noMealsAvailable": "Aucun repas disponible"
+}
